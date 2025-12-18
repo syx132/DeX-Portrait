@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://animatable-gaussians.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projectpage of Animatable Gaussians</title>
+    <!-- Bootstrap -->
+    <link href="./Projectpage of Animatable Gaussians_files/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Projectpage of Animatable Gaussians_files/font-awesome.min.css"> 
+  </head>
+
+  <!-- cover -->
+  <body><section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Animatable Gaussians: Learning Pose-dependent Gaussian Maps <br>for High-fidelity Human Avatar Modeling</h2>
+           <h4 style="color:#5a6268;">CVPR 2024</h4>
+            <hr>
+            <h6> <a href="https://lizhe00.github.io/" target="_blank">Zhe Li<sup>1</sup></a>,
+                <a href="https://zhengzerong.github.io/" target="_blank">Zerong Zheng<sup>2</sup></a>,
+                <a href="https://lizhenwangt.github.io/" target="_blank">Lizhen Wang<sup>1</sup></a>,
+                <a href="https://liuyebin.com/" target="_blank">Yebin Liu<sup>1</sup></a></h6>
+            <p><sup>1</sup>Tsinghua University<sup>&nbsp;&nbsp;&nbsp;&nbsp;2</sup>NNKosmos Technology</p>
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/pdf/2311.16096v3" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=kOmZxD0HxZI" role="button" target="_blank">
+                  <i class="fa fa-youtube"></i> Video</a></p>
+            </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/lizhe00/AnimatableGaussians" role="button" target="_blank">
+                    <i class="fa fa-github"></i> Code</a></p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://animatable-gaussians.github.io/relight/" role="button" target="_blank">
+                  <i class="fa fa-forward"></i> Extension for Relighting</a></p>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          <!-- <h6 style="color:#8899a5"> We present <b>Animatable Gaussians</b>, a new avatar representation<br> that leverages powerful 2D CNNs and explicit 3D Gaussian splatting for high-fidelity human avatar modeling.</h6> -->
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                  <source src="assets/motivation.mp4" type="video/mp4">
+            </video>
+              <!-- <br><br> -->
+          <p class="text-left"> Modeling animatable human avatars from RGB videos is a long-standing and challenging problem. Recent works usually adopt MLP-based neural radiance fields (NeRF) to represent 3D humans, but it remains difficult for pure MLPs to regress pose-dependent garment details. To this end, we introduce Animatable Gaussians, a new avatar representation that leverages powerful 2D CNNs and 3D Gaussian splatting to create high-fidelity avatars. To associate 3D Gaussians with the animatable avatar, we learn a parametric template from the input videos, and then parameterize the template on two front &amp; back canonical Gaussian maps where each pixel represents a 3D Gaussian. The learned template is adaptive to the wearing garments for modeling looser clothes like dresses. Such template-guided 2D parameterization enables us to employ a powerful StyleGAN-based CNN to learn the pose-dependent Gaussian maps for modeling detailed dynamic appearances. Furthermore, we introduce a pose projection strategy for better generalization given novel poses. Overall, our method can create lifelike avatars with dynamic, realistic and generalized appearances. Experiments show that our method outperforms other state-of-the-art approaches. 
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Animation</h3>
+            <hr style="margin-top:0px">
+          <h6 style="color:#8899a5"> Avatars animated by motions from <a href="https://amass.is.tue.mpg.de/" target="_blank">AMASS</a></h6>
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/teaser.mp4" type="video/mp4">
+            </video>
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/basketball.mp4" type="video/mp4">
+            </video>
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/football.mp4" type="video/mp4">
+            </video>
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/dancing.mp4" type="video/mp4">
+            </video>
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/irish_dancing.mp4" type="video/mp4">
+            </video>
+          <h6 style="color:#8899a5"> Avatars animated by other motions</h6>
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/others.mp4" type="video/mp4">
+            </video>
+              <!-- <br><br> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Method</h3>
+            <img src="./Projectpage of Animatable Gaussians_files/overview.jpg" width="100%" alt="">
+            <p>&nbsp;</p>
+            <p>
+              <b>Illustration of the pipeline.</b> It contains two main steps: 1) Reconstruct a character-specific template from multi-view images. 2) Predict pose-dependent Gaussian maps through the StyleUNet, and render the synthesized avatar by LBS and differentiable rasterization.
+            </p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Demo Video</h3>
+            <hr style="margin-top:0px">
+            If the video does not play, please click <a href="https://animatable-gaussians.github.io/assets/demo_video.mp4" target="_blank">here</a> to watch it.
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="./Projectpage of Animatable Gaussians_files/kOmZxD0HxZI.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@inproceedings{li2024animatablegaussians,
+  title={Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling},
+  author={Li, Zhe and Zheng, Zerong and Wang, Lizhen and Liu, Yebin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024}
+}
+</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+
+
+</body></html>
