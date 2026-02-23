@@ -47,6 +47,7 @@
   <script src="./static/js/index.js"></script>
 
   <link rel="stylesheet" href="./static/css/slider.css">
+  <link rel="stylesheet" href="./static/css/citation.css">
   <style>
     .zoom-image {
       transition: transform 0.3s ease;
@@ -317,17 +318,21 @@
     <div class="row ">
       <div class="col-12">
         <br><br>
-        <h2>Citation</h2>
+        <div class="citation-header">
+          <h2>Citation</h2>
+          <button id="copyCitationBtn" class="copy-btn">Copy</button>
+        </div>
         <hr style="margin-top:0px">
-        <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@article{shi2025dex,
+        <pre id="citationPre" class="citation-pre"><code id="citationCode">@article{shi2025dex,
   title={DeX-Portrait: Disentangled and Expressive Portrait Animation via Explicit and Latent Motion Representations},
   author={Shi, Yuxiang and Li, Zhe and Wang, Yanwen and Zhu, Hao and Cao, Xun and Liu, Ligang},
   journal={arXiv preprint arXiv:2512.15524},
   year={2025}
 }</code></pre>
+      </div>
     </div>
-  </div>
 </div>
+<script src="static/js/citation.js"></script>
 
 <footer style="margin-top: 40px; padding: 10px 0; border-top: 1px solid #e0e0e0; font-family: 'Times New Roman', serif; font-size: 14px; color: #333; text-align: center;">
     <p style="margin: 0 10%; line-height: 1.3;">

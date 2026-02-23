@@ -1,0 +1,35 @@
+/* Citation 标题和按钮容器样式 */
+.citation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 复制按钮基础样式 */
+.copy-btn {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* 按钮 hover 效果（可选，提升交互） */
+.copy-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Citation 代码块样式（复用原有样式，统一管理） */
+.citation-pre {
+  background-color: #e9eeef;
+  padding: 1.25em 1.5em;
+  margin: 0; /* 可选：消除默认间距 */
+}
+
+/* 复制成功状态样式 */
+.copy-btn.success {
+  background-color: #28a745;
+}
